@@ -831,6 +831,26 @@ body.mode-plan .outline{display:none;}
   border-bottom:calc(1.1*var(--u)) solid var(--ink);}
 .gel--solve{grid-template-columns:auto minmax(calc(38.6*var(--u)),auto) auto;}
 
+.exq__given{font-family:var(--font-math);font-size:calc(2*var(--u));color:var(--ink);
+  line-height:1;white-space:nowrap;margin-bottom:calc(2*var(--u));}
+.exq .exq__given .mx-ex-table td{font-size:calc(2*var(--u));padding:0 calc(1*var(--u));}
+
+.exq__items{align-self:flex-start;padding-left:calc(4*var(--u));gap:calc(1.5*var(--u));}
+.exq__items li{font-size:calc(2.6*var(--u));}
+
+.exq__items li::before{top:calc(1.355*var(--u));width:calc(0.8*var(--u));height:calc(0.8*var(--u));
+  background:var(--green-primary);}
+
+.exq5__wrap{display:flex;justify-content:center;margin:calc(1.6*var(--u)) 0;}
+.exq5{display:inline-grid;grid-template-columns:auto auto auto;grid-template-rows:auto auto;
+  align-items:center;font-family:var(--font-math);font-size:calc(2.4*var(--u));color:var(--ink);}
+.exq5__eq{grid-area:2/1;padding-right:calc(0.6*var(--u));}
+.exq5__lab{grid-area:1/2;padding:0 0.16em;}
+.exq5__mx{grid-area:2/2;}
+.exq5__rows{grid-area:2/3;}
+.exq5__lab .mx-ex-table,.exq5__mx .mx-ex-table{table-layout:fixed;width:calc(21*var(--u));}
+.exq5__lab .mx-ex-table td{padding-bottom:calc(0.5*var(--u));}
+.exq5__rows .mx-ex-table td{text-align:left;padding:0 0 0 calc(1.2*var(--u));}
 </style>
 </head>
 <body>
@@ -2077,6 +2097,160 @@ body.mode-plan .outline{display:none;}
     </div>
   </section>
 
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 1</div>
+      <ul class="mx-def__list"><li><b>Triangular matrix.</b> If <span class="mo"><b>U</b><sub>1</sub></span>, <span class="mo"><b>U</b><sub>2</sub></span> are upper triangular and <span class="mo"><b>L</b><sub>1</sub></span>, <span class="mo"><b>L</b><sub>2</sub></span> are lower triangular, which of the following are triangular?</li></ul>
+      <div class="fill-center">
+        <ul class="mx-def__sublist mx-def__sublist--ink exq__items">
+          <li><span class="mo"><b>U</b><sub>1</sub></span> + <span class="mo"><b>U</b><sub>2</sub></span></li>
+          <li><span class="mo"><b>U</b><sub>1</sub></span><span class="mo"><b>U</b><sub>2</sub></span></li>
+          <li><span class="mo"><b>U</b><span class="msubsup"><span>2</span><span>1</span></span></span></li>
+          <li><span class="mo"><b>U</b><sub>1</sub></span> + <span class="mo"><b>L</b><sub>1</sub></span></li>
+          <li><span class="mo"><b>L</b><sub>1</sub></span> + <span class="mo"><b>L</b><sub>2</sub></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 2</div>
+      <div class="exq__given">Let <span class="mo"><b>A</b></span> = <span class="mx-bracket"><table class="mx-ex-table"><tr><td>2</td><td>−1</td><td>3</td></tr><tr><td>−2</td><td>1</td><td>4</td></tr><tr><td>1</td><td>2</td><td>−2</td></tr></table></span>,&nbsp;&nbsp; <span class="mo"><b>B</b></span> = <span class="mx-bracket"><table class="mx-ex-table"><tr><td>−1</td><td>3</td><td>0</td></tr><tr><td>−3</td><td>1</td><td>0</td></tr><tr><td>0</td><td>0</td><td>2</td></tr></table></span>.</div>
+      <ul class="mx-def__list"><li>Showing all intermediate results, calculate the following expressions or give reasons why they are undefined:</li></ul>
+      <div class="fill-center">
+        <ul class="mx-def__sublist mx-def__sublist--ink exq__items">
+          <li><span class="mo"><b>AB</b></span></li>
+          <li><span class="mo"><b>AB</b><sup class="tsup">T</sup></span></li>
+          <li><span class="mo"><b>BA</b></span></li>
+          <li><span class="mo"><b>B</b><sup class="tsup">T</sup><b>A</b></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 3</div>
+      <div class="exq__given">Let <span class="mo"><b>B</b></span> = <span class="mx-bracket"><table class="mx-ex-table"><tr><td>−1</td><td>3</td><td>0</td></tr><tr><td>−3</td><td>1</td><td>0</td></tr><tr><td>0</td><td>0</td><td>2</td></tr></table></span>,&nbsp;&nbsp; <span class="mo"><b>C</b></span> = <span class="mx-bracket"><table class="mx-ex-table"><tr><td>1</td><td>1</td></tr><tr><td>−2</td><td>2</td></tr><tr><td>2</td><td>0</td></tr></table></span>.</div>
+      <ul class="mx-def__list"><li>Showing all intermediate results, calculate the following expressions or give reasons why they are undefined:</li></ul>
+      <div class="fill-center">
+        <ul class="mx-def__sublist mx-def__sublist--ink exq__items">
+          <li><span class="mo"><b>CC</b><sup class="tsup">T</sup></span></li>
+          <li><span class="mo"><b>BC</b></span></li>
+          <li><span class="mo"><b>CB</b></span></li>
+          <li><span class="mo"><b>C</b><sup class="tsup">T</sup><b>B</b></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 4</div>
+      <div class="exq__given">Let <span class="mo"><b>A</b></span> = <span class="mx-bracket"><table class="mx-ex-table"><tr><td>2</td><td>−1</td><td>3</td></tr><tr><td>−2</td><td>1</td><td>4</td></tr><tr><td>1</td><td>2</td><td>−2</td></tr></table></span>,&nbsp;&nbsp; <span class="mo"><b>a</b></span> = <span class="mx-bracket"><table class="mx-ex-table"><tr><td>−1</td><td>−2</td><td>0</td></tr></table></span>,&nbsp;&nbsp; <span class="mo"><b>b</b></span> = <span class="mx-bracket"><table class="mx-ex-table"><tr><td>3</td></tr><tr><td>−1</td></tr><tr><td>1</td></tr></table></span>.</div>
+      <ul class="mx-def__list"><li>Showing all intermediate results, calculate the following expressions or give reasons why they are undefined:</li></ul>
+      <div class="fill-center">
+        <ul class="mx-def__sublist mx-def__sublist--ink exq__items">
+          <li><span class="mo"><b>Aa</b></span></li>
+          <li><span class="mo"><b>Aa</b><sup class="tsup">T</sup></span></li>
+          <li><span class="mo">(<b>Ab</b>)<sup class="tsup">T</sup></span></li>
+          <li><span class="mo"><b>b</b><sup class="tsup">T</sup><b>A</b><sup class="tsup">T</sup></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 5</div>
+      <ul class="mx-def__list"><li><b>Profit vector.</b> Two factory outlets <span class="mo"><i class="mv">F</i><sub>1</sub></span> and <span class="mo"><i class="mv">F</i><sub>2</sub></span> in New York and Los Angeles sell sofas (<span class="mo"><i class="mv">S</i></span>), chairs (<span class="mo"><i class="mv">C</i></span>), and tables (<span class="mo"><i class="mv">T</i></span>) with a profit of $85, $62, and $30, respectively. Let the sales in a certain week be given by the matrix</li></ul>
+      <div class="exq5__wrap">
+        <div class="exq5">
+          <span class="exq5__eq mo"><b>A</b> =</span>
+          <span class="exq5__lab"><table class="mx-ex-table"><tr><td><i class="mv">S</i></td><td><i class="mv">C</i></td><td><i class="mv">T</i></td></tr></table></span>
+          <span class="exq5__mx"><span class="mx-bracket"><table class="mx-ex-table"><tr><td>400</td><td>60</td><td>240</td></tr><tr><td>100</td><td>120</td><td>500</td></tr></table></span></span>
+          <span class="exq5__rows"><table class="mx-ex-table"><tr><td><i class="mv">F</i><sub>1</sub></td></tr><tr><td><i class="mv">F</i><sub>2</sub></td></tr></table></span>
+        </div>
+      </div>
+      <ul class="mx-def__list"><li>Introduce a &quot;profit vector&quot; <span class="mo"><b>p</b></span> such that the components of <span class="mo"><b>v</b> = <b>Ap</b></span> give the total profits of <span class="mo"><i class="mv">F</i><sub>1</sub></span> and <span class="mo"><i class="mv">F</i><sub>2</sub></span>.</li></ul>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 6</div>
+      <ul class="mx-def__list"><li>Solve the linear system given explicitly or by its augmented matrix. Show details.</li></ul>
+      <div class="fill-center">
+        <div class="gs-eqs gs-eqs--4">
+          <span>−3<i class="mv">x</i></span><span>+ 8<i class="mv">y</i></span><span>=</span><span>5</span>
+          <span>8<i class="mv">x</i></span><span>− 12<i class="mv">y</i></span><span>=</span><span>−11</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 7</div>
+      <ul class="mx-def__list"><li>Solve the linear system given explicitly or by its augmented matrix. Show details.</li></ul>
+      <div class="fill-center">
+        <div class="gs-eqs gs-eqs--5">
+          <span></span><span>8<i class="mv">y</i></span><span>+ 6<i class="mv">z</i></span><span>=</span><span>−4</span>
+          <span>−2<i class="mv">x</i></span><span>+ 4<i class="mv">y</i></span><span>− 6<i class="mv">z</i></span><span>=</span><span>18</span>
+          <span><i class="mv">x</i></span><span>+ <i class="mv">y</i></span><span>− <i class="mv">z</i></span><span>=</span><span>2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 8</div>
+      <ul class="mx-def__list"><li>Solve the linear system given explicitly or by its augmented matrix. Show details.</li></ul>
+      <div class="fill-center">
+        <span class="mx-def__ex"><span class="mx-bracket"><table class="mx-ex-table"><tr><td>13</td><td>12</td><td>|</td><td>6</td></tr><tr><td>−4</td><td>7</td><td>|</td><td>73</td></tr><tr><td>4</td><td>5</td><td>|</td><td>11</td></tr></table></span></span>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 9</div>
+      <ul class="mx-def__list"><li>Solve the linear system given explicitly or by its augmented matrix. Show details.</li></ul>
+      <div class="fill-center">
+        <div class="gs-eqs gs-eqs--5">
+          <span><i class="mv">x</i></span><span>+ <i class="mv">y</i></span><span>− <i class="mv">z</i></span><span>=</span><span>9</span>
+          <span></span><span>8<i class="mv">y</i></span><span>+ 6<i class="mv">z</i></span><span>=</span><span>−6</span>
+          <span>−2<i class="mv">x</i></span><span>+ 4<i class="mv">y</i></span><span>− 6<i class="mv">z</i></span><span>=</span><span>40</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="slide mx-def mx-strong exq" style="background:#FFFFFF;">
+    <div class="slide-frame">
+      <div class="mx-def__hero">Exercise 10</div>
+      <ul class="mx-def__list"><li>Solve the linear system given explicitly or by its augmented matrix. Show details.</li></ul>
+      <div class="fill-center">
+        <div class="gs-eqs gs-eqs--5">
+          <span></span><span>−2<i class="mv">y</i></span><span>− 2<i class="mv">z</i></span><span>=</span><span>8</span>
+          <span>3<i class="mv">x</i></span><span>+ 4<i class="mv">y</i></span><span>− 5<i class="mv">z</i></span><span>=</span><span>8</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 
@@ -2086,6 +2260,7 @@ body.mode-plan .outline{display:none;}
     <button type="button" class="outline__item" data-go="2"><span>Matrices and Vectors</span><span class="outline__p">2</span></button>
     <button type="button" class="outline__item" data-go="10"><span>Matrix Multiplication</span><span class="outline__p">10</span></button>
     <button type="button" class="outline__item" data-go="29"><span>Gauss Elimination</span><span class="outline__p">29</span></button>
+    <button type="button" class="outline__item" data-go="44"><span>Exercises</span><span class="outline__p">44</span></button>
   </div>
 </nav>
 
