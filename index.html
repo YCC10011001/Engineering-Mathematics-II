@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linear Algebra — I-Wei Lai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap">
+<style>
+:root{--green:#379C39;--green-dark:#004B24;--ink:#0A0A0A;--gray:#686968;--line:#E6E6E6;--paper:#FFFFFF;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Noto Sans TC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  line-height:1.6;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:760px;margin:0 auto;padding:72px 24px 96px;}
+header{border-top:3px solid var(--green);padding-top:20px;margin-bottom:56px;}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:0.3em;color:var(--green);margin-bottom:10px;}
+h1{font-size:40px;font-weight:900;margin:0 0 14px;line-height:1.15;letter-spacing:-0.01em;}
+.meta{font-size:15px;color:var(--gray);margin:0;}
+.lec{border-top:1px solid var(--line);padding:28px 0;}
+.lec:last-of-type{border-bottom:1px solid var(--line);}
+.lec__no{font-size:12px;font-weight:700;letter-spacing:0.25em;color:var(--green);}
+.lec__title{font-size:24px;font-weight:700;margin:6px 0 8px;}
+.lec__blurb{font-size:15px;color:var(--gray);margin:0 0 18px;}
+.links{display:flex;flex-wrap:wrap;gap:10px;}
+a.btn{display:inline-block;padding:9px 18px;border:2px solid var(--green);border-radius:999px;
+  font-size:15px;font-weight:700;color:var(--green-dark);text-decoration:none;
+  transition:background .15s,color .15s;}
+a.btn:hover{background:var(--green);color:#fff;}
+span.btn--off{display:inline-block;padding:9px 18px;border:2px dashed var(--line);border-radius:999px;
+  font-size:15px;font-weight:700;color:#B3B3B3;}
+footer{margin-top:56px;font-size:13px;color:#B3B3B3;}
+@media (max-width:520px){h1{font-size:30px;} .wrap{padding:48px 20px 64px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">COURSE</div>
+    <h1>Linear Algebra</h1>
+    <p class="meta">I-Wei Lai · Department of Electrical Engineering, National Taiwan Normal University</p>
+  </header>
+  <section class="lec">
+    <div class="lec__no">LECTURE 01</div>
+    <div class="lec__title">The Concept of Matrix</div>
+    <p class="lec__blurb">Matrices and vectors, matrix algebra, multiplication, transposition, special matrices, Gauss elimination.</p>
+    <div class="links">
+      <a class="btn" href="lecture1/">Slides</a>
+      <a class="btn" href="lecture1/exercise.html">Exercises</a>
+      <span class="btn--off">Answers &mdash; not released yet</span>
+    </div>
+  </section>
+
+  <footer>Slides open in your browser. Use ← / → or scroll to move between pages.</footer>
+</div>
+</body>
+</html>
