@@ -1,9 +1,9 @@
-# Linear Algebra — course site
+# Engineering Mathematics II — course site
 
-Slides, exercises and answers for the Linear Algebra course
+Slides, exercises and answers for the Engineering Mathematics II course
 (I-Wei Lai, Department of Electrical Engineering, National Taiwan Normal University).
 
-Published with GitHub Pages: **https://ycc10011001.github.io/linear-algebra/**
+Published with GitHub Pages: **https://ycc10011001.github.io/Engineering-Mathematics-II/**
 
 ---
 
@@ -15,7 +15,7 @@ Published with GitHub Pages: **https://ycc10011001.github.io/linear-algebra/**
 
 ```bash
 cd ~/Desktop/YCC10011001/numeracy-deck-kit
-python build-site.py ../../linear-algebra
+python build-site.py ../../Engineering-Mathematics-II
 ```
 
 在這裡直接改，下一次建置就會被整個蓋掉。
@@ -26,9 +26,9 @@ python build-site.py ../../linear-algebra
 
 | 檔案 | 網址 |
 |---|---|
-| `index.html` | https://ycc10011001.github.io/linear-algebra/ |
-| `lecture1/index.html` | https://ycc10011001.github.io/linear-algebra/lecture1/ （簡報，題目在最後 10 頁）|
-| `lecture1/answer.html` | https://ycc10011001.github.io/linear-algebra/lecture1/answer.html |
+| `index.html` | https://ycc10011001.github.io/Engineering-Mathematics-II/ |
+| `lecture1/index.html` | https://ycc10011001.github.io/Engineering-Mathematics-II/lecture1/ （簡報，題目在最後 10 頁）|
+| `lecture1/answer.html` | https://ycc10011001.github.io/Engineering-Mathematics-II/lecture1/answer.html |
 
 `answer.html` 只有在工作室 repo 的 `build-site.py` 把該章的 `answer_public`
 改成 `True` 之後才會被建出來——這就是「隔一週才公布答案」的開關。
