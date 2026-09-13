@@ -31,6 +31,18 @@ a.btn:hover{background:var(--green);color:#fff;}
 span.btn--off{display:inline-block;padding:9px 18px;border:2px dashed var(--line);border-radius:999px;
   font-size:15px;font-weight:700;color:#B3B3B3;}
 footer{margin-top:56px;font-size:13px;color:#B3B3B3;}
+/* 布告欄 */
+.board{margin:0 0 56px;}
+.board__head{font-size:12px;font-weight:700;letter-spacing:0.25em;color:var(--green);margin-bottom:12px;}
+.ann{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line);}
+.ann__date{font-size:14px;font-weight:700;color:var(--gray);font-variant-numeric:tabular-nums;}
+.ann__body{font-size:15px;margin:0;overflow-wrap:anywhere;}
+.ann__body a{color:var(--green-dark);}
+.board__empty{font-size:15px;color:#B3B3B3;padding:12px 0;border-top:1px solid var(--line);margin:0;}
+.board details{border-top:1px solid var(--line);}
+.board summary{cursor:pointer;font-size:14px;color:var(--gray);padding:12px 0;}
+.board details .ann:first-of-type{border-top:0;}
+@media (max-width:520px){.ann{grid-template-columns:1fr;gap:2px;}}
 @media (max-width:520px){h1{font-size:30px;} .wrap{padding:48px 20px 64px;}}
 </style>
 </head>
@@ -41,6 +53,10 @@ footer{margin-top:56px;font-size:13px;color:#B3B3B3;}
     <h1>Engineering Mathematics II</h1>
     <p class="meta">I-Wei Lai · Department of Electrical Engineering, National Taiwan Normal University</p>
   </header>
+  <section class="board">
+    <div class="board__head">ANNOUNCEMENTS</div>
+    <p class="board__empty">No announcements yet.</p>
+  </section>
   <section class="lec">
     <div class="lec__no">LECTURE 01</div>
     <div class="lec__title">The Concept of Matrix</div>
