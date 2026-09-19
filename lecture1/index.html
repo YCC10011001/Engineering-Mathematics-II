@@ -404,6 +404,11 @@ html.no-motion *::after{
 body.mode-plan .outline{display:none;}
 @media print{.outline,.outline__backdrop{display:none !important;}}
 
+.mx-vbar{position:relative;display:inline-flex;vertical-align:middle;padding:0 0.2em;}
+.mx-vbar::before,.mx-vbar::after{content:"";position:absolute;top:0;bottom:0;border-left:0.055em solid var(--ink);}
+.mx-vbar::before{left:0;}
+.mx-vbar::after{right:0;}
+
 </style>     
 
 <style>
