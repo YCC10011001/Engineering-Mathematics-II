@@ -1910,9 +1910,11 @@ td.ra-hit .ra-c{display:inline-block;animation:raPop .45s ease-out;}
     var d     = JSON.parse(gv.getAttribute('data-gv'));
     var slide = gv.closest('.slide');
     var Q = gv.querySelector('.gv-Q'), M = gv.querySelector('.gv-M'), R = gv.querySelector('.gv-R');
-    var side = slide.querySelector('.gv-side');
+    
+    var scope = gv.closest('.gv-scope') || slide;
+    var side = scope.querySelector('.gv-side');
     var svg = side.querySelector('.gvd'), btn = side.querySelector('.gv-btn');
-    var lines = all('.gv-ln', slide);
+    var lines = all('.gv-ln', scope);
     var steps = d.qr ? ['rot', 'qr'] : ['rot'];
     var step = 0, timers = [], busy = false;
     var n = R.querySelectorAll('tr').length;
